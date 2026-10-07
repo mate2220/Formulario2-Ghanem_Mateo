@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div style="height: 100px;">
     <header>
+        <div id="header-container">
         <div class="header-content">
             <h1>BOCA JUNIORS</h1>
             <p><strong>Pasión que no se explica. Se vive.</strong></p>
@@ -21,13 +23,23 @@
                 <li><a href="#">Tienda</a></li>
             </ul>
         </div>
+        </div>
+
+        <div id="header-divisor"></div>
+
     </header>
+</div>
 
     <main>
         <section class="titulo">
-            <h2>Viví Boca desde adentro</h2>
-            <p>El sentimiento xeneize se construye entre todos. Completá el formulario y formá parte de nuestra comunidad para recibir novedades, actividades y experiencias relacionadas con el club.</p>
-            <a href="#formulario">QUIERO PARTICIPAR</a>
+            <div id="txt">
+                <h2>Viví Boca desde adentro</h2>
+                <p>El sentimiento xeneize se construye entre todos. Completá el formulario y formá parte de nuestra comunidad para recibir novedades, actividades y experiencias relacionadas con el club.</p>
+                <a href="#formulario">QUIERO PARTICIPAR</a>
+            </div>
+            <div id="banner">
+                <img src="img/boca.jpg" alt="Imagen de Boca Juniors">
+            </div>
         </section>
 
         <section id="formulario">
@@ -61,7 +73,7 @@
 
                     <div>
                         <label for="como" style="display: block; margin-bottom: 10px;">¿Cómo vivís tu pasión por Boca?</label>
-                        <select id="como" name="como" required>
+                        <select id="como" name="como" required> 
                             <option value="">Voy a la cancha</option>
                             <option value="">Lo sigo desde casa</option>
                             <option value="">Soy socio/a</option>
@@ -120,18 +132,55 @@
                     </div>
 
                     <div>
-                        <label for="historia">Contanos tu historia con Boca Juniors</label>
-                        <textarea id="historia" name="historia" rows="4" placeholder="¿Cuándo empezaste a ser hincha de Boca?"></textarea>
+                        <label for="historia" style="display: flex; flex-direction: row; width: 100%;">Contanos tu historia con Boca Juniors</label>
+                        <textarea id="historia" name="historia" rows="5" placeholder="¿Cuándo empezaste a ser hincha de Boca?"></textarea>
                     </div>  
                 </fieldset>
 
                 <section>
-                    <button type="submit">Registrarme</button>
+                    <button type="submit">Enviar</button>
                     <button type="reset">Limpiar formulario</button>
                 </section>
 
             </form>
         </section>
     </main>
+
+        <footer class="redes">
+            <div id="caja">
+                <h4>Enlaces útiles:</h4>
+
+                <ul>
+                    <li><a href="https://www.bocajuniors.com.ar/">Página oficial</a></li>
+                </ul>
+            </div>
+            <div id="caja">
+                <h4>Contacto:</h4>
+
+                <ul>
+                    <li><a href="tel:08103330012">0810-333-0012 Lun a Vie de 10 a 20</a></li>
+                    <li><a href="https://g.co/kgs/PXFL5Ex">Brandsen 805, CABA</a></li>
+                    <li><a href="mailto:infosocios@bocajuniors.com.ar?subject=Mensaje%20Website">infosocios@bocajuniors.com.ar</a></li>
+                </ul>
+            </div>
+            <div id="caja">
+                <h4>Redes sociales:</h4>
+
+                <ul style="display: flex; list-style: none; gap: 10px;">
+                    <li><a href="https://www.facebook.com/BocaJuniors"><img src="img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.youtube.com/@ElCanaldeBoca"><img src="img/you.webp" alt="Youtube"></a></li>                    
+                    <li><a href="https://www.instagram.com/bocajrs/"><img src="img/insta.webp" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div id="caja">
+                <h4>Créditos:</h4>
+
+                <ul style="list-style: none;"">
+                    <li>© 2026 Mateo Ghanem</li>
+                </ul>
+            </div>
+        </footer>
 </body>
 </html>
+
+
