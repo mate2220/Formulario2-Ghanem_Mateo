@@ -30,7 +30,6 @@ header {
 
     z-index: 9999;
     position: fixed;
-    top: 0;
 }
 
 #header-container {
@@ -87,14 +86,26 @@ header {
     margin-bottom: 20px;
 }
 
-.titulo #banner{
+.titulo #banneri{
     display: flex;
     align-items: center;
     justify-items: end;
     width: 60%;
 }
 
-.titulo #banner img {
+.titulo #banneri img {
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.titulo #bannerd{
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    width: 60%;
+}
+
+.titulo #bannerd img {
     width: 100%;
     border-radius: 0px 10px 10px 0px;
 }
@@ -133,6 +144,10 @@ header {
     margin-bottom: 20px;
 }
 
+.titulo a:hover{
+    transform: translateY(-2px);
+}
+
 .titulo a {
     text-decoration: none;
     color: #ffcc00;
@@ -140,6 +155,8 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
 #formulario {
